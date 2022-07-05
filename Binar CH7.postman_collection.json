@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "c64e251d-7d12-4937-91f9-b6f6268dabd5",
+		"name": "Binar CH7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "886871"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "irvan",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "irvan",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Irvan",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Malang",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "SuperAdmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "irvan",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "irvan",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Irvan",
+							"disabled": true
+						},
+						{
+							"key": "alamat",
+							"value": "Malang",
+							"disabled": true
+						},
+						{
+							"key": "role",
+							"value": "SuperAdmin",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "irvan",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "irvan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "irvan",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "irvan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "irvan",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "irvan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

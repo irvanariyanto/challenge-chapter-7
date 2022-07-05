@@ -1,0 +1,18 @@
+<a href="/add"><button>Add Data</button></a>
+<table>
+    <tr>
+       <th>Name</th><th>City</th><th>Edit</th><th>Delete</th>
+    </tr>
+ 
+    <% for (var i = 0; i < usergame.length; /* I save the data in a variable 'quotation', I don't know how you named your variable  */  i++) { %>
+     <tr>
+       <td><%= usergame[i]["user_game_biodata.name"] %></td>
+       <td><%= usergame[i]["user_game_biodata.alamat"] %></td>
+       <td><a href="/<%- usergame[i].id %>"><button >Edit</button></a></td>
+       <td><form action="/delete/<%- usergame[i].id %>"  method="POST">
+        <input type="hidden" name="_method" value="DELETE" />
+        <input type="submit" value="Delete">
+    </form></td>
+     </tr>    
+    <% } %>
+ </table>

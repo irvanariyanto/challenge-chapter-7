@@ -1,0 +1,27 @@
+<body>
+    <h1>Edit Data</h1>
+    <form name="form1" method="POST" action="/edit">
+    <table>
+        <input type="hidden" name="id" value="<%- usergame.id %>">
+        <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" value="<%- usergame['user_game_biodata.name'] %>"></td>
+        </tr>
+        <tr>
+        <tr>
+        <td>Username</td>
+        <td><input type="text" name="username" value="<%- usergame.username %>"></td>
+        </tr>
+        <tr>
+    
+        <tr>
+        <td>Alamat</td>
+        <td><input type="text" name="alamat" value="<%- usergame['user_game_biodata.alamat'] %>"></td>
+        </tr>
+        <tr>
+        <td colspan="2"><input type="submit" value="Save" ></td>
+        </tr>
+    </table>
+    </form>   
+    
+</body>
